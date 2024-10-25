@@ -7,3 +7,10 @@ export type Product = {
   inStock: boolean;
   imageURL: string;
 };
+
+export type filterOptions = {
+  price: [number, number];
+  category: string;
+  inStock?: boolean;
+  sort: 'asc' | 'desc';
+};

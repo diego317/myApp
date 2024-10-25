@@ -1,3 +1,4 @@
+import { CategoryKey } from '@constants/enums';
 import { Product } from '@constants/types';
 
 import books from '../assets/books.jpg';
@@ -6,13 +7,6 @@ import furniture from '../assets/furniture.jpg';
 import pc from '../assets/pc.jpg';
 import toys from '../assets/toys.jpeg';
 
-enum CategoryKey {
-  Electronics = 'Electronics',
-  Clothing = 'Clothing',
-  Furniture = 'Furniture',
-  Books = 'Books',
-  Toys = 'Toys',
-}
 const categories: CategoryKey[] = Object.values(CategoryKey);
 
 const imageURLs: Record<CategoryKey, string> = {
