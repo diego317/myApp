@@ -1,0 +1,23 @@
+@use "sass:map";
+
+$white: #FFF;
+$black: #000;
+$red: #E0320B;
+
+$azure-radiance: (
+  50: #f0f6fe,
+  100: #deeafb,
+  200: #c4ddf9,
+  300: #9bc7f5,
+  400: #6ca8ee,
+  500: #3d80e6,
+  600: #346cdc,
+  700: #2b58ca,
+  800: #2948a4,
+  900: #264082,
+  950: #1c294f,
+);
+
+$primary-color: map.get($azure-radiance, 500);
+$accent-color: map.get($azure-radiance, 600);
+$outer-space: #283139;

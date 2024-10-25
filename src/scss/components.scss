@@ -1,0 +1,25 @@
+@use 'variables/colors';
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.quarter-width {
+  width: 25%;
+}
+
+.text-error {
+  color: colors.$red;
+}
+
+.input-error {
+  border: 1px solid colors.$red;
+}
+
+.hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,79 @@
+@use 'variables/colors';
+@use 'variables/fonts';
+
+%text-base {
+  color: colors.$outer-space;
+  font-family: fonts.$app-font;
+  font-weight: 400;
+
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.medium {
+    font-weight: 500;
+  }
+
+  &.light {
+    font-weight: 300;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.underline {
+    text-decoration: underline;
+  }
+}
+
+.title-extra-big {
+
+  @extend %text-base;
+  font-size: 40px;
+}
+
+.title-big {
+
+  @extend %text-base;
+  font-size: 32px;
+}
+
+.title-normal {
+
+  @extend %text-base;
+  font-size: 24px;
+}
+
+.text-big {
+
+  @extend %text-base;
+  font-size: 20px;
+}
+
+.text-normal {
+
+  @extend %text-base;
+  font-size: 16px;
+}
+
+.text-small {
+
+  @extend %text-base;
+  font-size: 14px;
+
+
+  &.error-text {
+    color: colors.$red;
+    display: block;
+    padding: 10px;
+  }
+}
+
+.text-pre-wrap {
+  white-space: pre-wrap;
+}

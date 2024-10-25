@@ -1,0 +1,28 @@
+@use 'variables/colors';
+@use 'variables/fonts';
+@use 'layout';
+@use 'margins';
+@use 'components';
+@use 'texts';
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  box-sizing: border-box;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
