@@ -1,0 +1,13 @@
+@use '../../scss/variables/colors';
+
+.layout {
+  display: grid;
+  height: 100vh;
+  background-color: colors.$azure-radiance300;
+  overflow: auto;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem; 
+}

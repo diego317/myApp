@@ -3,6 +3,8 @@
 $white: #FFF;
 $black: #000;
 $red: #E0320B;
+$green: #33a633;
+$disable: #ccc;
 
 $azure-radiance: (
   50: #f0f6fe,
@@ -19,5 +21,15 @@ $azure-radiance: (
 );
 
 $primary-color: map.get($azure-radiance, 500);
-$accent-color: map.get($azure-radiance, 600);
+$azure-radiance50: map.get($azure-radiance, 50);
+$azure-radiance100: map.get($azure-radiance, 100);
+$azure-radiance200: map.get($azure-radiance, 200);
+$azure-radiance300: map.get($azure-radiance, 300);
+$azure-radiance400: map.get($azure-radiance, 400);
+$azure-radiance500: map.get($azure-radiance, 500);
+$azure-radiance600: map.get($azure-radiance, 600);
+$azure-radiance700: map.get($azure-radiance, 700);
+$azure-radiance800: map.get($azure-radiance, 800);
+$azure-radiance900: map.get($azure-radiance, 900);
+$azure-radiance950: map.get($azure-radiance, 950);
 $outer-space: #283139;
