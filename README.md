@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# MyApp - Product Listing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+MyApp is a React application that displays a list of products in card format. Users can filter products by various criteria, including price range, category, and availability. This project utilizes Vite as the build tool, TypeScript for type safety, and SASS for styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Responsive Design**: The product listing page adapts to various screen sizes.
+- **Product Filtering**: Users can filter products by:
+  - Price Range
+  - Category
+  - Availability (in stock)
+- **Sorting**: Products can be sorted by price in ascending or descending order.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Component-based UI.
+- **Vite**: Fast build tool optimized for frontend development.
+- **TypeScript**: Provides type safety and helps with code clarity.
+- **SASS**: Allows for modular and reusable styling.
+- **React Router**: For routing and navigation.
+- **React Select**: For filter dropdowns.
+- **clsx**: For conditional class names in components.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## Project Structure
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The project is structured to separate components, styles, and utilities:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
+```plaintext
+src/
+├── assets/           # Static assets (images, icons, etc.)
+├── components/       # Reusable UI components (ProductCard, Filter, etc.)
+├── pages/            # Pages of the application (ProductList)
+├── scss/             # Global and modular SASS styles
+├── utilities/        # Utility functions and constants
+├── App.tsx           # Main App component
+└── main.tsx          # Entry point
 ```
